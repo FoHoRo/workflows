@@ -1,0 +1,12 @@
+name: Show OS Info
+
+on:
+  workflow_dispatch  # ручний запуск
+
+jobs:
+  show-os:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print OS info
+        run: uname -v
