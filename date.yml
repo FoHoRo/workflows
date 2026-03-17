@@ -1,0 +1,12 @@
+name: Show Date
+
+on:
+  push  # запуск при пуші
+
+jobs:
+  show-date:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print date
+        run: date
